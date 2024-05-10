@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCyFFeecG1YfFxyf9RKqENvJsLH8J_KCxE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1094849136357</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.fasum.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>first-app-e9e4c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>first-app-e9e4c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1094849136357:ios:96370bbe82092ba3f7760c</string>
+	<key>DATABASE_URL</key>
+	<string>https://first-app-e9e4c-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
