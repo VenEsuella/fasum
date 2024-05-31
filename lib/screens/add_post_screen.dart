@@ -4,6 +4,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 
 class AddPostScreen extends StatefulWidget {
@@ -60,6 +62,24 @@ class _AddPostScreenState extends State<AddPostScreen> {
     });
 
     Navigator.pop(context);
+  }
+  String _locationMessage = '';
+
+  void _getCurrentLocation() async {
+    final status = await Permission.location.status;
+    if (!status.isGranted) {
+      final result = await Permission.location.request();
+      if (result != PermissionStatus.granted) {
+        return;
+      }
+    }
+
+    final position = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high);
+    setState(() {
+      _locationMessage =
+      'Latitude : ${position.latitude}, Longtitude : ${position.longitude}';
+    });
   }
 
   @override
